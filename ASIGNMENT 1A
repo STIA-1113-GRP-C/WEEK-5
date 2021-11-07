@@ -1,0 +1,49 @@
+package ASSIGNMENT;
+import java.util.Scanner;
+public class assignment1a {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int f_item, s_item, t_item, item;
+		double f_price, s_price, t_price, total, discount, nett;
+		
+		System.out.print("Enter the number of items: ");
+		item = sc.nextInt();
+		System.out.print("Enter price of first item: RM");
+		f_price = sc.nextDouble();
+		System.out.print("Enter quantity of first item: ");
+		f_item = sc.nextInt();
+		System.out.println();
+		System.out.print("Enter price of second item: RM");
+		s_price= sc.nextDouble();
+		System.out.print("Enter quantity of second item: ");
+		s_item = sc.nextInt();
+		System.out.println();
+		System.out.print("Enter price of third item: RM");
+		t_price = sc.nextDouble();
+		System.out.print("Enter quantity of third item: ");
+		t_item = sc.nextInt();
+		
+		total = (f_price * f_item) + (s_price * s_item) + (t_price * t_item);
+		if  (total > 100)
+		    discount = 0.2 * total;
+		else
+			discount = 0.1 * total;
+		
+		nett = total - discount;
+		System.out.println();
+		System.out.println("Total price       : RM" + total);  
+		System.out.println("Discount received : RM" + discount);
+		System.out.println("Price to be paid  : RM" + nett);
+		   
+		 
+		
+		
+		
+		
+
+	}
+
+}
